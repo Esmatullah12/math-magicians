@@ -1,5 +1,6 @@
 import React from 'react';
 import './Calculator.css';
+import DigitButton from './DigitButton';
 
 const Calculator = () => (
   <div className="calculator-grid">
@@ -7,18 +8,18 @@ const Calculator = () => (
     <button type="button">AC</button>
     <button type="button">+/-</button>
     <button type="button">%</button>
-    <button type="button" className="yellow-btns">/</button>
-    <button type="button">7</button>
-    <button type="button">8</button>
-    <button type="button">9</button>
+    <button type="button" className="yellow-btns">÷</button>
+    <DigitButton digit={7} />
+    <DigitButton digit={8} />
+    <DigitButton digit={9} />
     <button type="button" className="yellow-btns">x</button>
-    <button type="button">4</button>
-    <button type="button">5</button>
-    <button type="button">6</button>
+    <DigitButton digit={4} />
+    <DigitButton digit={5} />
+    <DigitButton digit={6} />
     <button type="button" className="yellow-btns">-</button>
-    <button type="button">1</button>
-    <button type="button">2</button>
-    <button type="button">3</button>
+    <DigitButton digit={1} />
+    <DigitButton digit={2} />
+    <DigitButton digit={3} />
     <button type="button" className="yellow-btns">+</button>
     <button type="button" className="span-tow">0</button>
     <button type="button">.</button>
