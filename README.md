@@ -39,9 +39,31 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
-- HTML
-- CSS
-- React
+### Tech Stack <a name="tech-stack"></a>
+
+> This project was built using the following technologies:
+
+<details>
+  <summary>HTML</summary>
+  <ul>
+    <li><a href="https://html.com/" target="_blank">HTML</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>CSS</summary>
+  <ul>
+    <li><a href="https://www.w3schools.com/css/" target="_blank">CSSs</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>React</summary>
+  <ul>
+    <li><a href="https://react.dev/" target="_blank">React</a></li>
+  </ul>
+</details>
+
 
 ### Key Features <a name="key-features"></a>
 
