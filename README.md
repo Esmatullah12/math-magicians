@@ -53,7 +53,7 @@
 <details>
   <summary>CSS</summary>
   <ul>
-    <li><a href="https://www.w3schools.com/css/" target="_blank">CSSs</a></li>
+    <li><a href="https://www.w3schools.com/css" target="_blank">CSSs</a></li>
   </ul>
 </details>
 
