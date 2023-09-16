@@ -34,14 +34,6 @@ const Calculator = () => {
         setResult(percentage);
         setOperator(value);
       }
-    } else if (value === '+/-') {
-      if (result === '0') {
-        setResult('-0');
-      } else if (result.charAt(0) === '-') {
-        setResult(result.slice(1));
-      } else {
-        setResult(`-${result}`);
-      }
     }
   };
 
@@ -70,7 +62,11 @@ const Calculator = () => {
     if (operator === '=') {
       setResult(value.toString());
       setOperator('');
-    } else if (result === '0' && /[0-9.]/.test(value)) {
+    } else if (value === '+/-') {
+      // Toggle the sign of the current result without clearing
+      const toggledResult = result.charAt(0) === '-' ? result.slice(1) : `-${result}`;
+      setResult(toggledResult);
+    } else if (result === '0' || /[+x÷-]/.test(result)) {
       setResult(value.toString());
     } else {
       setResult((prevResult) => prevResult + value.toString());
@@ -81,7 +77,7 @@ const Calculator = () => {
     <div className="calculator-grid">
       <div className="calculator-output">{result}</div>
       <button type="button" onClick={handleClearClick}>AC</button>
-      <button type="button" onClick={() => handleOperatorClick('+/-')}>+/-</button>
+      <button type="button" onClick={() => handleClick('+/-')}>+/-</button>
       <button type="button" onClick={() => handleOperatorClick('%')}>%</button>
       <button type="button" className="yellow-btns" onClick={() => handleOperatorClick('÷')}>÷</button>
       <DigitButton onClick={() => handleClick(7)} digit={7} />

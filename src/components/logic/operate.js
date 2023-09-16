@@ -16,7 +16,7 @@ export default function operate(value1, value2, operator) {
     }
     return num1.div(num2).toString();
   } if (operator === '%') {
-    return (num1 / 100).toString();
+    return num1.mod(num2).toString();
   }
   return ('');
 }
