@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import fetchQuote from './logic/fetchAPI';
 import './Quote.css';
 
-const Quote = () => {
+function Quote() {
   const [quote, setQuote] = useState('');
   const [error, setError] = useState(null);
 
@@ -32,6 +32,6 @@ const Quote = () => {
       <div className="quote-container">{quoteContent}</div>
     </>
   );
-};
+}
 
 export default Quote;

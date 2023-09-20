@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import React from 'react';
 import Calculator from './components/Calculator';
-import Quote from './components/Quote';
 import Navbar from './components/Navbar';
 import About from './components/About';
+import Quote from './components/Quote';
 import './App.css';
 
 const App = () => (
