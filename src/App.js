@@ -3,7 +3,7 @@ import React from 'react';
 import Calculator from './components/Calculator';
 import Navbar from './components/Navbar';
 import About from './components/About';
-import Quote from './components/Quote';
+import Quotes from './components/Quotes';
 import './App.css';
 
 const App = () => (
@@ -11,7 +11,7 @@ const App = () => (
     <Navbar />
     <Routes>
       <Route path="/" element={<Calculator />} />
-      <Route path="/quote" element={<Quote />} />
+      <Route path="/quote" element={<Quotes />} />
       <Route path="/about" element={<About />} />
     </Routes>
   </>

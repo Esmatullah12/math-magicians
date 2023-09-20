@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import fetchQuote from './logic/fetchAPI';
-import './Quote.css';
+import './Quotes.css';
 
-function Quote() {
+function Quotes() {
   const [quote, setQuote] = useState('');
   const [error, setError] = useState(null);
 
@@ -34,4 +34,4 @@ function Quote() {
   );
 }
 
-export default Quote;
+export default Quotes;
