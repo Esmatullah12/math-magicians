@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(4, 5rem);
   grid-template-rows: repeat(6, 3rem);
-  margin: 20px auto;
+  margin: 20vh auto;
   justify-content: center;
 }
 
