@@ -6,6 +6,15 @@
   padding: 0;
 }
 
+.calculator {
+  margin: 0 auto;
+  max-width: 80%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
 .calculator-grid {
   display: grid;
   grid-template-columns: repeat(4, 5rem);

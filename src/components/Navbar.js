@@ -9,8 +9,8 @@ function Navbar() {
       <nav className="nav-menu">
         <ul>
           <Link className="nav-link" to="/">Home</Link>
-          <Link className="nav-link" to="/quote">Quote</Link>
-          <Link className="nav-link" to="/about">About</Link>
+          <Link className="nav-link" to="/calculator">Calculator</Link>
+          <Link className="nav-link" to="/quotes">Quote</Link>
         </ul>
       </nav>
     </header>
