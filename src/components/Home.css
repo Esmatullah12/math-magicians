@@ -1,0 +1,19 @@
+.container {
+  margin: 20px auto;
+  width: 70%;
+  margin-top: 100px;
+  border: 0.5px solid gray;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 15px 25px, rgba(0, 0, 0, 0.05) 0 5px 10px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.about-info {
+  line-height: 25px;
+}

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import fetchQuote from './logic/fetchAPI';
+import './Quotes.css';
 
-const Quote = () => {
+function Quotes() {
   const [quote, setQuote] = useState('');
   const [error, setError] = useState(null);
 
@@ -19,7 +20,7 @@ const Quote = () => {
 
   let quoteContent;
   if (!quote && !error) {
-    quoteContent = <p>...loading</p>;
+    quoteContent = <p>loading...</p>;
   } else if (error && !quote) {
     quoteContent = <p>{error}</p>;
   } else {
@@ -31,6 +32,6 @@ const Quote = () => {
       <div className="quote-container">{quoteContent}</div>
     </>
   );
-};
+}
 
-export default Quote;
+export default Quotes;
